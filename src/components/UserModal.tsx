@@ -8,6 +8,7 @@ interface UserModalProps {
 }
 
 export default function UserModal({ user, onClose }: UserModalProps) {
+    
     const handleBackdropClick = (e: React.MouseEvent) => {
         if (e.target === e.currentTarget) {
             onClose();

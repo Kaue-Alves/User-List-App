@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import UserTable from "./components/UserTable";
 import UserModal from "./components/UserModal";
 import type { User } from "./types/User";
+import Footer from "./components/Footer";
 
 function App() {
     const [searchTerm, setSearchTerm] = useState("");
@@ -36,6 +37,7 @@ function App() {
                     onClose={handleCloseModal}
                 />
             )}
+            <Footer/>
         </div>
     );
 }
